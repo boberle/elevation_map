@@ -1,0 +1,6 @@
+version(1.0);
+
+raster = open("/home/timmy/hgt/FOO.srf");
+echo("\nmin is: " & info(raster,"min"));
+echo("\nmax is: " & info(raster,"max"));
+

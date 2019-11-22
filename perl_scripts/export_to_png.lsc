@@ -1,0 +1,42 @@
+version(1.0);
+
+########################################################################
+# CONFIG
+
+baseDir = "/home/timmy/hgt/combined_files/";
+sourceFile = "FOO.srf";
+targetFile = "BAR.png";
+
+vExag = "3";
+
+minHeight = -70;
+maxHeight = 3060;
+
+########################################################################
+
+raster = open(baseDir & sourceFile);
+
+#raster = reproject(raster_,"OSGB","true",90,90);
+
+range = maxHeight-minHeight;
+inc = range/7;
+
+colouredit(raster,"rules", "0"             & " 121 177 196 (D)," &
+                           "1"             & " 141 166 141 (D)," &
+                           minHeight       & " 141 166 141    ," &
+                           minHeight+1*inc & " 172 194 155    ," &
+                           minHeight+2*inc & " 221 219 167    ," &        
+                           minHeight+3*inc & " 254 235 181    ," &
+                           minHeight+4*inc & " 248 212 153    ," &
+                           minHeight+5*inc & " 241 170 109    ," &
+                           minHeight+6*inc & " 227 112  72     ");
+
+# for the blue at the sea level (0), you can also use 141 141 166
+
+
+edit(raster,"sunElev","40");
+edit(raster,"vExag",vExag);
+
+draw(baseDir & targetFile,raster,raster,"null","null","relief");
+
+#/* vim: set tabstop=3 shiftwidth=3 noexpandtab: */
