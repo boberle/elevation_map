@@ -6,7 +6,7 @@ Here are some example:
 
 <table>
    <tr>
-      <td><a href="samples/public/vesuvius.jpg"><img src="samples/public/vesuvius_thumb.jpg" target="_blank" width="300px"></a></td>
+      <td><a href="samples/public/etna.jpg"><img src="samples/public/etna_thumb.jpg" target="_blank" width="300px"></a></td>
       <td><a href="samples/public/saint_helens.jpg"><img src="samples/public/saint_helens_thumb.jpg" target="_blank" width="300px"></a></td>
    </tr>
    <tr>
