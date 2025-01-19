@@ -27,7 +27,7 @@ Here are some example:
    </tr>
 </table>
 
-To make these maps, I used data used are from NASA (SRTM 1 and 3), and [LandSerf](http://www.staff.city.ac.uk/~jwo/landserf/).  I provide a [Jupyter Notebook](elevation_map_make.ipynb) that download the data from the NASA website and produced the scripts to be executed by LandSerf, so these maps are done in a few seconds.
+To make these maps, I used data used are from NASA (SRTM 1 and 3), and [LandSerf](http://www.staff.city.ac.uk/~jwo/landserf/).  I provide a [Jupyter Notebook](elevation_map_maker.ipynb) that download the data from the NASA website and produced the scripts to be executed by LandSerf, so these maps are done in a few seconds.
 
 If you want to read the raw data from NASA, and get an image out of them without LandSerf, check out [this other repository of mine: `hgt2pnm`](https://github.com/boberle/hgt2pnm).
 
