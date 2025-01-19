@@ -1,6 +1,6 @@
 # Make Relief Map
 
-An elevation map shows you elevations data with color. The color doesn't reflect the natural landscape (it is not a satellite map), but all the points at a certain altitude have the same color. Sometimes, contour lines are added at regular altitude interval to show the steepness: if two lines are close from each other, the slope is steep.
+An elevation map shows elevation data with color. The colors don't reflect the natural landscape (it is not a satellite map), but all the points at a given altitude have the same color. Sometimes, contour lines are added at regular altitude interval to show the steepness: if two lines are close from each other, the slope is steep.
 
 Here are some example:
 
